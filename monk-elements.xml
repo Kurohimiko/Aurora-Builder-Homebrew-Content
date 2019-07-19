@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Way of the Elements</name>
+    <author url="https://www.enworld.org/forum/member.php?59848-Hawk-Diesel">Hawk-Diesel / Vakom</author>
+    <update version="1.0">
+      <file name="monk-elements.xml" url="https://www.enworld.org/forum/showthread.php?645643-Separating-the-Way-of-the-Four-Elements-Monk" />
+    </update>
+  </info>
+
+  <element name="Way of the Elements" type="Archetype" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_MONK_WAY_OF_THE_ELEMENTS">
+    <supports>Monastic Tradition</supports>
+    <description>
+      <p>As a Monk of the Way of the Elements you have chosen to attune yourself to one of the following four elements:</p>
+      <ul>
+        <li>Way of Air</li>
+        <li>Way of Earth</li>
+        <li>Way of Fire</li>
+        <li>Way of Water</li>
+      </ul>
+		<p>A rebuilding of Way of the Four Elements by Hawk-Diesel with modifications by myself Vakom.</p>
+    </description>
+    <sheet>
+      <description>Monks of the Way of the Elements learn to channel their ki into their chosen element.</description>
+    </sheet>
+	<rules>
+		<select type="Archetype Feature" name="Way of the Elements (Level 3)" supports="Chosen Element" level="3" number="1" />
+	</rules>
+  </element>
+
+    <!-- Chosen Elements -->
+  <element name="Way of Air" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_CHOSEN_ELEMENT_WAY_OF_AIR">
+    <supports>Chosen Element</supports>
+    <description>
+      <p>As a practitioners of the Way of Air you are able to control the very air around you, giving you access to the Gust cantrip. Wisdom is your spellcasting ability for this cantrip.</p>
+	  <p class="indent">When you reach level 11, your control over the wind improves. When you use the Gust cantrip to move an unattended object, the object can be up to 10 lbs, and you can choose any direction to push the object rather than just pushing it away from you.</p>
+      <div element="ID_ENWORLD_ARCHETYPE_FEATURE_SWEEPING_WIND" />
+      <div element="ID_ENWORLD_ARCHETYPE_FEATURE_SWIFT_STEP" />
+      <div element="ID_ENWORLD_ARCHETYPE_FEATURE_LIGHT_AS_AIR" />
+	  <div element="ID_ENWORLD_ARCHETYPE_FEATURE_FOCUSED_CYCLONE" />
+    </description>
+    <sheet>
+      <description>You gain the Gust cantrip. Wisdom is your spellcasting ability for this cantrip.
+		<p class="indent">When you reach level 11, your control over the wind improves. When you use the Gust cantrip to move an unattended object, the object can be up to 10 lbs, and you can choose any direction to push the object rather than just pushing it away from you.</p>
+	  </description>
+    </sheet>
+    <rules>
+	  <grant type="Spell" id="ID_XGTE_SPELL_GUST"/>
+	  <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_SWEEPING_WIND" level="3"/>
+      <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_SWIFT_STEP" level="6"/>
+      <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_LIGHT_AS_AIR" level="11"/>
+      <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_FOCUSED_CYCLONE" level="17"/>
+    </rules>
+  </element>
+  <element name="Way of Earth" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_CHOSEN_ELEMENT_WAY_OF_EARTH">
+    <supports>Chosen Element</supports>
+    <description>
+      <p>As a practitioners of the Way of Earth you are able to control the very earth around you, giving you access to the Mold Earth cantrip. Wisdom is your spellcasting ability for this cantrip.</p>
+	  <p class="indent">When you reach level 11, your power to manipulate earth and stone increases. When you use the Mold Earth cantrip the amount of stone or dirt you can control increases to a 15-foot cube.</p>
+      <div element="ID_ENWORLD_ARCHETYPE_FEATURE_BOULDER_STANCE" />
+      <div element="ID_ENWORLD_ARCHETYPE_FEATURE_SEISMIC_SENSE" />
+      <div element="ID_ENWORLD_ARCHETYPE_FEATURE_ONE_WITH_THE_EARTH" />
+	  <div element="ID_ENWORLD_ARCHETYPE_FEATURE_BODY_OF_STEEL" />
+	 </description>
+    <sheet>
+      <description>You gain the Mold Earth cantrip. Wisdom is your spellcasting ability for this cantrip.
+		<p class="indent">When you reach level 11, your power to manipulate earth and stone increases. When you use the Mold Earth cantrip the amount of stone or dirt you can control increases to a 15-foot cube.</p>
+	  </description>
+    </sheet>
+    <rules>
+	  <grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH"/>
+	  <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_BOULDER_STANCE" level="3"/>
+      <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_SEISMIC_SENSE" level="6"/>
+      <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_ONE_WITH_THE_EARTH" level="11"/>
+      <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_BODY_OF_STEEL" level="17"/>
+    </rules>
+  </element>
+  <element name="Way of Fire" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_CHOSEN_ELEMENT_WAY_OF_FIRE">
+    <supports>Chosen Element</supports>
+    <description>
+      <p>As a practitioners of the Way of Fire you are able to control the raw power of fire, giving you access to the Control Flames and Produce Flame cantrips. Wisdom is your spellcasting ability for these cantrips.</p>
+	  <p class="indent">When you reach level 11, your power over fire improves. When you use the Control Flames cantrip, the amount of nonmagical fire that you can manipulate increases to a 15-foot cube.</p>
+	  <div element="ID_ENWORLD_ARCHETYPE_FEATURE_HEAT_OF_COMBAT" />
+	  <div element="ID_ENWORLD_ARCHETYPE_FEATURE_UNRELENTING_FLAMES" />
+	  <div element="ID_ENWORLD_ARCHETYPE_FEATURE_DANCING_DRAGON" />
+	  <div element="ID_ENWORLD_ARCHETYPE_FEATURE_FLAMES_OF_THE_SUN" />
+    </description>
+    <sheet>
+      <description>You gain the Control Flames and Produce Flame cantrips. Wisdom is your spellcasting ability for these cantrips.
+		<p class="indent">When you reach level 11, your power over fire improves. When you use the Control Flames cantrip, the amount of nonmagical fire that you can manipulate increases to a 15-foot cube.</p>
+	  </description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" />
+	  <grant type="Spell" id="ID_XGTE_SPELL_PRODUCE_FLAME" />
+	  <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_HEAT_OF_COMBAT" level="3"/>
+	  <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_UNRELENTING_FLAMES" level="6"/>
+	  <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_DANCING_DRAGON" level="11"/>
+	  <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_FLAMES_OF_THE_SUN" level="17"/>
+    </rules>
+  </element>
+  <element name="Way of Water" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_CHOSEN_ELEMENT_WAY_OF_WATER">
+    <supports>Chosen Element</supports>
+    <description>
+      <p>As a practitioners of the Way of Water you are able to control the life giving substance known as water, giving you access to the Shape Water cantrip and a swim speed equal to your movement. Wisdom is your spellcasting ability for this cantrip.</p>
+	  <p class="indent">When you reach level 11, your control over water improves. When you use the Shape Water cantrip, the amount of water that you can manipulate increases to a 15-foot cube.</p>
+	  <div element="ID_ENWORLD_ARCHETYPE_FEATURE_WATER_WHIP" />
+	  <div element="ID_ENWORLD_ARCHETYPE_FEATURE_WATER_OF_LIFE" />
+	  <div element="ID_ENWORLD_ARCHETYPE_FEATURE_OCTOPUS_STYLE" />
+	  <div element="ID_ENWORLD_ARCHETYPE_FEATURE_ICE_PRISON" />
+    </description>
+    <sheet>
+      <description>You gain the Shape Water cantrip and a swim speed equal to your movement. Wisdom is your spellcasting ability for this cantrip.
+		<p class="indent">When you reach level 11, your control over water improves. When you use the Shape Water cantrip, the amount of water that you can manipulate increases to a 15-foot cube.</p>
+	  </description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
+	  <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_WATER_WHIP" level="3"/>
+	  <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_WATER_OF_LIFE" level="6"/>
+	  <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_OCTOPUS_STYLE" level="11"/>
+	  <grant type="Archetype Feature" id="ID_ENWORLD_ARCHETYPE_FEATURE_ICE_PRISON" level="17"/>
+	  <stat name="speed:swim" value="speed" bonus="base" />
+    </rules>
+  </element>
+  
+    <!-- Way of Air -->
+	<element name="Sweeping Wind" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_SWEEPING_WIND">
+    <description>
+      <p>When you take this subclass, you learn to use the winds to give you more control over the field of battle.</p>
+      <p>Using the attack action you can use this ability to choose an opponent up to 15 feet away. They must make a Strength saving throw or be either knocked prone or pushed 5 feet in any chosen direction by powerful gusts of wind. If launched into the air, the target gains advantage on saving throw.</p>
+	  <p class="indent">You can choose to increase the distance you push your opponent by spending 1 ki point per additional 10 feet up to a maximum of 30 feet.</p>
+    </description>
+    <sheet>
+      <description>Using the attack action you can use this ability to choose an opponent up to 15 feet away. They must make a Strength saving throw or be either knocked prone or pushed 5 feet in any chosen direction by powerful gusts of wind. If launched into the air, the target gains advantage on saving throw.
+		<p class="indent">You can choose to increase the distance you push your opponent by spending 1 ki point per additional 10 feet up to a maximum of 30 feet.</p>
+	  </description>
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+  
+    <element name="Swift Step" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_SWIFT_STEP">
+    <description>
+      <p>When you reach 6th level, you become quick and airy. You gain the following benefits:</p>
+	  <p class="indent">You gain an additional 10 feet movement speed.</p>
+	  <p class="indent">You are unaffected by difficult terrain.</p>
+	  <p class="indent">You add your Wisdom modifier to initiative checks.</p>
+    </description>
+    <sheet>
+      <description>You gain the following benefits:
+		<p class="indent">You gain an additional 10 feet movement speed.</p>
+		<p class="indent">You are unaffected by difficult terrain.</p>
+		<p class="indent">You add your Wisdom modifier to initiative checks.</p>
+	  </description>
+    </sheet>
+    <rules>
+		<stat name="innate speed:misc" value="10" />
+    </rules>
+  </element>
+  
+    <element name="Light as Air" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_LIGHT_AS_AIR">
+    <description>
+      <p>When you reach 11th level, you are forever freed from the constraints of the earth. You gain a fly speed equal to your movement speed.</p>
+	  <p class="indent">If there is a falling target both within 100 feet of you and within your line of sight, you can use your reaction to slow their fall as if they were affected by the feather fall spell.</p>
+    </description>
+    <sheet>
+      <description>You gain a fly speed equal to your movement speed.
+		<p class="indent">If there is a falling target both within 100 feet of you and within your line of sight, you can use your reaction to slow their fall as if they were affected by the feather fall spell.</p>
+	  </description>
+    </sheet>
+    <rules>
+		<stat name="speed:fly" value="speed" bonus="base" />
+    </rules>
+  </element>
+  
+    <element name="Focused Cyclone" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_FOCUSED_CYCLONE">
+    <description>
+      <p>By 17th level you have developed such fine control over wind and air that you can create a violent and focused whirlwind that can literally steal the breath from your enemies.</p>
+	  <p class="indent">As an action you may spend 2 ki points and choose a target that you can see within 15 feet. The target must make a Constitution saving throw.</p>
+	  <p class="indent">On a failure, the target takes 4d8 thunder damage and suffers one level of exhaustion.</p>
+	  <p class="indent">On a success, the target only takes 4d8 thunder damage, but does not suffer the exhaustion.</p>
+	  <p class="indent">Those immune to exhaustion may still take the thunder damage.</p>
+    </description>
+    <sheet>
+      <description>As an action you may spend 2 ki points and choose a target that you can see within 15 feet. The target must make a Constitution saving throw.
+		<p class="indent">On a failure, the target takes 4d8 thunder damage and suffers one level of exhaustion.</p>
+		<p class="indent">On a success, the target only takes 4d8 thunder damage, but does not suffer the exhaustion.</p>
+		<p class="indent">Those immune to exhaustion may still take the thunder damage.</p>
+	  </description>
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+  
+    <!-- Way of Earth -->
+    <element name="Boulder Stance" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_BOULDER_STANCE">
+    <description>When you take this subclass, as a bonus action you can enter a stance that allows you to create and launch boulders up to 60 feet.
+      <p>Until the start of your next turn, you are unable to move and your unarmed attacks deal double their normal damage dice.</p>
+	  <p class="indent">On a successful strike, you many spend 1 ki point to add an additional damage dice to that attack. These attacks deal maximum damage to objects and structures.</p>
+	  <p class="indent">While using Boulder Stance you gain immunity to being pushed or knocked prone.</p>
+    </description>
+    <sheet>
+      <description>As a bonus action you may enter a stance allowing you to create and launch boulders up to 60 feet. Until the start of your next turn, you are unable to move and your unarmed attacks deal double their normal damage dice.
+		<p class="indent">On a successful strike, you many spend 1 ki point to add an additional damage dice to that attack. These attacks deal maximum damage to objects and structures.</p>
+		<p class="indent">While using Boulder Stance you gain immunity to being pushed or knocked prone.</p>
+	  </description>
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+  
+    <element name="Seismic Sense" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_SEISMIC_SENSE">
+    <description>At level 6 you learn to detect vibrations in the ground and or other solid surface to perceive objects, people, and other aspects of the environment.
+      <p></p>
+	  <p class="indent">You gain Seismic Sense out to 30ft.</p>
+    </description>
+    <sheet>
+      <description>This skill enables users to detect vibrations in the ground and or other solid surface to perceive objects, people, and aspects of the environment.
+		<p class="indent">You gain Seismic Sense out to 30ft.</p>
+	  </description>
+    </sheet>
+    <rules>
+		<grant type="Spell" id="ID_VAKOM_SPELL_SEISMIC_SENSE" />
+    </rules>
+  </element>
+  
+    <element name="One with the Earth" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_ONE_WITH_THE_EARTH">
+    <description>Upon reaching 11th level, you gain a burrow speed equal to movement speed, allowing you to move through the ground.
+      <p> You can burrow through nonmagical, unworked earth and stone. While doing so, you don't disturb the material you move through.</p>
+	  <p class="indent">If any part of you remains submerged in earth or stone by the end of your turn, you are shunted to the nearest open space and take 4d10 force damage</p>
+    </description>
+    <sheet>
+      <description>You can burrow through nonmagical, unworked earth and stone at a burrow sped equal to your movement speed. While doing so, you don't disturb the material you move through.
+		<p class="indent">If any part of you remains submerged in earth or stone by the end of your turn, you are shunted to the nearest open space and take 4d10 force damage</p>
+	  </description>
+    </sheet>
+    <rules>
+		<stat name="speed:burrow" value="speed" bonus="base" />
+    </rules>
+  </element>
+  
+    <element name="Body of Steel" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_BODY_OF_STEEL">
+    <description>When you reach 17th level, you have learned to easily endure attacks that would utterly destroy lesser mortals.
+      <p>When you are struck by an attacker within your line of sight or can see through your Seismic Sense, you can use a reaction to spend 2 ki points and gain immunity to that attack.</p>
+	  <p class="indent">Once used, you will have resistance to all damage until the end of your next turn.</p>
+    </description>
+    <sheet>
+      <description>When you are struck by an attacker within your line of sight or can see through your Seismic Sense, you can use a reaction to spend 2 ki points and gain immunity to that attack.
+		<p class="indent">Once used, you will have resistance to all damage until the end of your next turn.</p>
+	  </description>
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+  
+    <!-- Way of Fire -->
+    <element name="The Heat of Combat" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_HEAT_OF_COMBAT">
+    <description>When you take this subclass, you learn to wreath your unarmed strikes with the powerful flames of your unflinching will to burn your enemies.
+      <p>You add fire damage to your unarmed strikes equal to your Wisdom modifier.</p>
+	  <p class="indent">Additionally, whenever you use the Produce Flames cantrip, you add your Wisdom modifier to the damage dealt.</p>
+    </description>
+    <sheet>
+      <description>You add fire damage to your unarmed strikes equal to your Wisdom modifier.
+		<p class="indent">Additionally, whenever you use the Produce Flames cantrip, you add your Wisdom modifier to the damage dealt.</p>
+	  </description>
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+  
+    <element name="Unrelenting Flames" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_UNRELENTING_FLAMES">
+    <description>At the 6th level any fire damage that you deal ignores resistance.
+      <p></p>
+	  <p class="indent">Any creature that is immune to fire is instead considered to be resistant against your attacks that deal fire damage.</p>
+    </description>
+    <sheet>
+      <description>Any fire damage that you deal ignores resistance.
+		<p class="indent">Any creature that is immune to fire is instead considered to be resistant against your attacks that deal fire damage.</p>
+	  </description>
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+  
+    <element name="The Dancing Dragon" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_DANCING_DRAGON">
+    <description>At the 11th level you have learned to produce jets of flame in the shape of a dragon that move as if alive.
+      <p>As an action you choose a number of enemies that you can see within 30 feet up to your Wisdom bonus. Each enemy must make a Dexterity saving throw or take 3d6 fire damage.</p>
+	  <p class="indent">For every ki point spent, up to a maximum of 3, the damage increases by 2d6.</p>
+    </description>
+    <sheet>
+      <description>As an action you choose a number of enemies that you can see within 30 feet up to your Wisdom bonus. Each enemy must make a Dexterity saving throw or take 3d6 fire damage.
+		<p class="indent">For every ki point spent, up to a maximum of 3, the damage increases by 2d6.</p>
+	  </description>
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+  
+    <element name="Flames of the Sun" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_FLAMES_OF_THE_SUN">
+    <description>At the 17th level and onward, the flames you produce burn as hot as the Sun. 
+      <p>Enemies always take full fire damage from your attacks, regardless of their resistance or immunity.</p>
+	  <p class="indent">When you deal fire damage with your unarmed strike or Produce Flame attacks, you may spend 1 ki point to deal double your Wisdom bonus as fire damage during that attack.</p>
+    </description>
+    <sheet>
+      <description>Enemies always take full fire damage from your attacks, regardless of their resistance or immunity.
+		<p class="indent">When you deal fire damage with your unarmed strike or Produce Flame attacks, you may spend 1 ki point to add double your Wisdom bonus as fire damage during that attack.</p>
+	  </description>
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+  
+    <!-- Way of Water -->
+    <element name="Water Whip" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_WATER_WHIP">
+    <description>When you take this subclass, you learn to coat your unarmed strikes in water extending your reach to 20 feet.
+      <p>For each unarmed strike you make, you can choose whether it deals bludgeoning or cold damage.</p>
+	  <p class="indent">After you successfully hit an opponent with an unarmed strike, you may spend 1 ki point to grapple your opponent.</p>
+	  <p class="indent">You do not require your hands to grapple. The total number of opponents you can simultaneously grapple are equal to your Wisdom bonus.</p>
+	  <p class="indent">Escaping a grapple requires your target to use their action to make a Strength saving throw.</p>
+    </description>
+    <sheet>
+      <description>When using an unarmed strike you can attack up to 20 feet and deal either bludgeoning or cold damage.
+		<p class="indent">After you successfully hit an opponent with an unarmed strike, you may spend 1 ki point to grapple your opponent.</p>
+		<p class="indent">You do not require your hands to grapple. The total number of opponents you can simultaneously grapple are equal to your Wisdom bonus.</p>
+		<p class="indent">Escaping a grapple requires your target to use their action to make a Strength saving throw.</p>
+	  </description>
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+  
+    <element name="Water of Life" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_WATER_OF_LIFE">
+    <description>When you reach 6th level, you learn to infuse water with your ki to heal even grievous injuries.
+      <p>As an action you can spend ki points to heal yourself or others with your touch.</p>
+	  <p class="indent">For each ki point spent, you can heal 5 hit points.</p>
+    </description>
+    <sheet>
+      <description>As an action you can spend ki points to heal yourself or others with your touch.
+		<p class="indent">For each ki point spent, you can heal 5 hit points.</p>
+	  </description>
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+  
+    <element name="Octopus Style" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_OCTOPUS_STYLE">
+    <description>Upon reaching 11th level, you learn to use your water tendrils to defend yourself and your allies, and even flow with attacks to redirect them back upon the enemy.
+      <p>When an enemy you can see targets yourself or an ally within 20 feet of you, you may use your reaction to force the attack to be made with disadvantage.</p>
+	  <p class="indent">If said attack misses and the attacker is within 20 feet of you, you can spend 1 ki point to attempt an unarmed strike against the attacker.</p>
+    </description>
+    <sheet>
+      <description>When an enemy you can see targets yourself or an ally within 20 feet of you, you may use your reaction to force the attack to be made with disadvantage.
+		<p class="indent">If said attack misses and the attacker is within 20 feet of you, you can spend 1 ki point to attempt an unarmed strike against the attacker.</p>
+	  </description>
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+  
+    <element name="Ice Prison" type="Archetype Feature" source="Separating Way of the Four Elements" id="ID_ENWORLD_ARCHETYPE_FEATURE_ICE_PRISON">
+    <description>At 17th level, you have developed the ability to encase your opponents in ice, making it difficult for them to fight back.
+      <p>As an action, you may attempt to use this ability against any target you currently have grappled with your water whip ability.</p>
+	  <p class="indent">Each target must make a Strength saving throw or become restrained. A target restrained by this ability may use their action to repeat their Strength saving throw.</p>
+	  <p class="indent">On a success, the creature is no longer restrained or grappled.</p>
+    </description>
+    <sheet>
+      <description>As an action, you may attempt to use this ability against any target you currently have grappled with your water whip ability.
+		<p class="indent">Each target must make a Strength saving throw or become restrained. A target restrained by this ability may use their action to repeat their Strength saving throw.</p>
+		<p class="indent">On a success, the creature is no longer restrained or grappled.</p>
+	  </description>
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+  
+  <element name="Seismic Sense" type="Spell" source="Avatar Seismic Sense" id="ID_VAKOM_SPELL_SEISMIC_SENSE">
+    <supports>Monk</supports>
+    <description>
+      <p>You touch the ground or another solid surface. Until the end of your next turn, you can detect vibrations in the environment.</p>
+      <p class="indent">By sensing vibrations in the ground, you can perceive your surroundings as precisely as normal sight, and in some cases with even greater clarity. You are able to detect things that are barely visible or even invisible to the naked eye as well as things out of your line of sight.</p>
+	  <p class="indent">Obstacles that would normally obstruct regular vision, such as walls and thick dust clouds, are rendered ineffective against seismic sense. As the vibrations travel underground, they enable you to effectively detect subterranean cavities.</p>
+	  <p class="indent">As a side effect you are able to discern whether or not spoken words are falsehoods. Omissions, evasions, and false claims are undetectable. The target must succeed a Charisma (Deception) saving throw or be caught lying.</p>
+    </description>
+    <setters>
+      <set name="keywords">seismic</set>
+      <set name="level">0</set>
+      <set name="school">Divination</set>
+      <set name="time">1 Bonus Action</set>
+      <set name="duration">1 Round</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  
+	<element name="EN World" type="Source" source="EN World" id="ID_ENWORLD_SOURCE_FORUM">
+		<description>
+			<![CDATA[<p>Homebrew from EN World</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">ENWD</set>
+			<set name="url">https://www.enworld.org/forum/content.php</set>
+			<set name="author" abbreviation="ENWD">EN World</set>
+			<set name="homebrew">true</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+		</setters>
+	</element>
+  
+</elements>
