@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<description></description>
+		<author url="https://github.com/Kurohimiko">Kurohimiko</author>
+		<update version="1.0.0">
+			<file name="race-amazon.xml" url="" />
+		</update>
+	</info>
+
+  <element name="Amazon" type="Race" source="Homebrew" id="ID_KH_RACE_AMAZON">
+    <description>
+      <p class="flavor">"It is better to die with a sword in your hand than live with a scar on your back, for that is the brand of a coward", this is the creed of the warrior women known as Amazons.</p>
+	  <p class="indent">Amazons live in secret islands, valleys, or other secluded places. They hunt and forage for food, train for whatever danger may arise, and defend their homes and sisters from monsters and beasts.</p>
+      <h4>PERSONALITY</h4>
+      <p>Amazons are quick to act, feeling that talking will often confuse the situation when their gut has already given them the answer they need. They are quick to distrust all outsiders, especially men, though given time, they will develop friendships outside of their own race.<br /> <span class="indent"></span>They rarely travel outside their homeland but it is not unheard of. Those that do are either compelled by curiosity of the outside word, sent out by their Matriarch, or exiled.</p>
+      <h4>PHYSICAL DESCRIPTION</h4>
+      <p>Amazons are large, well-built humanoids with powerful builds. They are entirely female, and most races find them beautiful.<br /> <span class="indent" />Their skin colors are as varied as humans', ranging from dark-skinned to borderline albino.<br /> <span class="indent" /></p>
+      <h4>RELATIONS</h4>
+      <p>Amazons are highly reclusive and don't take well to interlopers in their lands, treating them with hostility or aggression.<br /> <span class="indent" />Trade with neighboring cultures primarily consists of bartering with whatever they have.</p>
+      <h4>ALIGNMENT</h4>
+      <p>As amazons spend a lot of time at the mercy of nature, they tend toward neutrality. However, the law of their culture is also very important to them, for it is those few doctrines that uphold their fragile civilization.</p>
+      <h4>LANGUAGE</h4>
+      <p>Sylvan is the language of choice among amazons, who may have learned it from their forest dwelling fey neighbors whom they share land with. Though, when dealing with humans and other races for trading, they do speak Common, although it is rather rough do to lack of practice.</p>
+	  <h4>AMAZON NAMES</h4>
+      <p>Amazonian names draw primarily from the ancient Greek and as such Latin naming schemes. Xanathar's Guide to Everything has a section that gives the player a rollable table of 50 female Greek names on page 186.</p>
+      <p>
+        <span class="emphasis">Names: </span>Aello, Ainia, Ainippe, Alcinoe, Alkaia, Bremusa, Celaneo, Clete, Clyemne, Deianeira, Diana, Doris, Echephyle, Eumache, Euryleia, Harmothoe, Iphito, Kydoime, Lykopis, Lysippe, Molpadia, Okyale, Prothoe, Pyrgomache, Tecmessa, Thraso, Toxaris, Valasca, Xanthippe.<br />
+      </p>
+      <h4> TRAITS</h4>
+      <p>A race of warrior women.</p>
+      <p>
+        <span class="feature">Ability Score Increase. </span>Your Strength, Constitution, and Charisma scores each increase by 1<br />
+        <span class="feature">Age. </span>Amazons reach adulthood in their mid-teens, and usually, live to be just over 200 years old. Their body's showing no sign of age until their final years.<br />
+        <span class="feature">Alignment. </span>As amazons spend a lot of time at the mercy of nature, they tend toward neutrality.<br />
+        <span class="feature">Size. </span>Amazons typically stand roughly between 6 and 8 feet tall and weigh between 220 and 320 pounds. Your size is Medium.<br />
+        <span class="feature">Speed. </span>Your base walking speed is 35 feet.<br />
+        <span class="feature">Amazon Weapon Training. </span>You have proficiency with spears, glaives, shortbows, longbows, and shields.<br />
+		<span class="feature">Wilderness Home. </span>Amazons gain a +2 racial bonus on Survival skill checks. Aiton amazons are at home in the wilderness and are quite capable of fending for themselves. Additionally, they gain a +2 circumstance bonus on Hide checks when in forests and overgrown areas as they have learned to adorn themselves with things found in nature and blend in with their camouflage.<br />
+		<span class="feature">Powerful Build. </span>Your peoples emphasize on self-betterment and your naturally adept body causes you to be significantly stronger than most races your size. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br />
+        <span class="feature">Rugged Grace. </span>Amazons have an inherent, nigh-deific, yet somewhat uncivilized presence that other races take note of. Whether this takes the form of noble gesture, bombastic charm or feminine sway, their unusual mannerisms, intentionally or otherwise, fill others' perceptions with warm feelings and clouded judgment. Whenever you make an Charisma (Persuasion) or an Charisma (Intimidation) check against a humanoid creature, you are considered proficient in the Persuasion or Intimidation skill and if you are already proficient you may add double your proficiency bonus to the check, instead of your normal proficiency bonus.<br />
+        <span class="feature">Languages. </span>You can speak, read, and write Common and Sylvan<br />
+      </p>
+	  <table>
+		<thead>
+			<tr><td>Base Height</td><td>Height Modifier</td><td>Base Weight</td><td>Weight Modifier</td></tr>
+		</thead>
+        <tr><td>6′2</td><td>+ 2d12 in</td><td>175 lb.</td><td>x (2d6) lb.</td></tr>
+      </table>
+    </description>
+    <sheet display="false" />
+    <setters>
+      <set name="names" type="female">Aello, Ainia, Ainippe, Alcinoe, Alkaia, Bremusa, Celaneo, Clete, Clyemne, Deianeira, Diana, Doris, Echephyle, Eumache, Euryleia, Harmothoe, Iphito, Kydoime, Lykopis, Lysippe, Molpadia, Okyale, Prothoe, Pyrgomache, Tecmessa, Thraso, Toxaris, Valasca, Xanthippe.</set>
+    </setters>
+    <rules>
+      <stat name="strength" value="1" />
+	  <stat name="constitution" value="1" />
+	  <stat name="charisma" value="1" />
+      <stat name="innate speed" value="35" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+      <grant type="Racial Trait" id="ID_KH_RACIAL_TRAIT_AMAZON_WEAPON_TRAINING" />
+	  <grant type="Racial Trait" id="ID_KH_RACIAL_TRAIT_AMAZON_WILDERNESS_HOME" />
+	  <grant type="Racial Trait" id="ID_KH_RACIAL_TRAIT_AMAZON_POWERFUL_BUILD" />
+	  <grant type="Racial Trait" id="ID_KH_RACIAL_TRAIT_AMAZON_RUGGED_GRACE" />
+    </rules>
+  </element>
+  
+  <element name="Amazon Weapon Training" type="Racial Trait" source="Homebrew" id="ID_KH_RACIAL_TRAIT_AMAZON_WEAPON_TRAINING">
+    <supports />
+    <requirements />
+    <description>
+      <p>You have proficiency with the battleaxe, longswords, spears, longbows, and shields.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
+	  <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+	  <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+	  <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
+	  <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+	</rules>
+  </element>
+  <element name="Wilderness Home" type="Racial Trait" source="Homebrew" id="ID_KH_RACIAL_TRAIT_AMAZON_WILDERNESS_HOME">
+    <supports />
+    <requirements />
+    <description>
+      <p>Amazons gain a +2 racial bonus on Survival skill checks. Amazons are at home in the wilderness and are quite capable of fending for themselves.</p>
+	  <p class="indent">Additionally, they gain a +2 circumstance bonus on Hide checks when in forests and overgrown areas as they have learned to adorn themselves with things found in nature and blend in with their camouflage.</p>
+    </description>
+    <sheet>
+      <description>Amazons are at home in the wilderness and so are quite capable of fending for themselves.</description>
+    </sheet>
+    <rules>
+	</rules>
+  </element>
+  <element name="Powerful Build" type="Racial Trait" source="Homebrew" id="ID_KH_RACIAL_TRAIT_AMAZON_POWERFUL_BUILD">
+    <supports />
+    <requirements />
+    <description>
+      <p>Your peoples emphasize on self-betterment and your naturally adept body causes you to be significantly stronger than most races your size. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+    </description>
+    <sheet>
+      <description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+    </sheet>
+    <rules>
+	</rules>
+  </element>
+  <element name="Rugged Grace" type="Racial Trait" source="Homebrew" id="ID_KH_RACIAL_TRAIT_AMAZON_RUGGED_GRACE">
+    <supports />
+    <requirements />
+    <description>
+      <p>Amazons have an inherent, nigh-deific, yet somewhat uncivilized presence that other races take note of. Whether this takes the form of noble gesture, bombastic charm or feminine sway, their unusual mannerisms, intentionally or otherwise, fill others' perceptions with warm feelings and clouded judgment. Whenever you make an Charisma (Persuasion) or an Charisma (Intimidation) check against a humanoid creature, you are considered proficient in the Persuasion or Intimidation skill and if you are already proficient you may add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+    </description>
+    <sheet>
+      <description>Whenever you make an Charisma (Persuasion) or an Charisma (Intimidation) check against a humanoid creature, you are considered proficient in the Persuasion or Intimidation skill and if you are already proficient you may add double your proficiency bonus to the check, instead of your normal proficiency bonus.</description>
+    </sheet>
+    <rules>
+	</rules>
+  </element>
+
+</elements>
