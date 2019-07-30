@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dullahan</name>
+		<description></description>
+		<author url="https://github.com/Kurohimiko">Kurohimiko</author>
+		<update version="1.0.0">
+			<file name="race-dullahan.xml" url="" />
+		</update>
+	</info>
+
+  <element name="Dullahan" type="Race" source="Homebrew" id="ID_KH_RACE_DULLAHAN">
+    <description>
+      <p class="flavor">"There is no way to bar the road aginst a dullahan - locks, gates, and doors seem to pose no obstacle to them. Rumors say they care not for being gawked at, often lashing out at those who do. They seem to possess a strong aversion to gold."</p>
+	  <p class="indent">-Unknown, Unknown</p>
+      <h4>PERSONALITY</h4>
+      <p>Do to both their appearence and frequent rumors Dullahan tend to be shy, cold, or closed off during interations.<br /> <span class="indent"></span>As a being of death they enjoy both the dark and macabre. This is commanly seen in their love of dark humor.</p>
+      <h4>PHYSICAL DESCRIPTION</h4>
+      <p>Dullahan tend toward a more human appearence, often resembling a corpse with their ghastly and/or morbid skin tones.<br /> <span class="indent" />The sclera of their eyes are black while their iris varies in color.<br /> <span class="indent" />Hair can be any natural color but is commonly black, gray, or white.</p>
+      <h4>HISTORY</h4>
+      <p>A dullahan is a type of fey created from a decapitated human. Due to their headlessness they are frequently mistaken for the undead but both head and body are as alive as any human, given new life through unknown magic.<br /> <span class="indent" />It is believed they were originally created as a way to keep life in check and prevent it from growing too fast. Very little is known about dullahan as they are very tight lipped about their history.</p>
+      <h4>ALIGNMENT</h4>
+      <p>As a reaper of souls, Dullahans typically tend toward neutral alignments, for death discriminates not.</p>
+      <h4>LANGUAGE</h4>
+      <p>A fey creature, Dullahan are quite versed in the Sylvan language as are they in the Comman language.</p>
+	  <h4>DULLAHAN NAMES</h4>
+      <p>Dullahan take a false names that usually tends towards being simple, sometimes even just repeating syllables. They don't willingly reveal their true names to anyone for they know the power names hold. Some dullahan have taken to using random human names or nicknames instead.</p>
+      <p>
+      </p>
+      <h4>DULLAHAN TRAITS</h4>
+      <p></p>
+      <p>
+        <span class="feature">Ability Score Increase. </span>You may choose three ability scores and increase them each by 1. <br />
+        <span class="feature">Age. </span>Dullahan are magical creatures and as such do not age. However, they do appear as old as they where before they died. <br />
+        <span class="feature">Alignment. </span>Dullahans typically lean toward neutral, as death comes for all.<br />
+        <span class="feature">Size. </span>Dullahan are the height of a human. As a Dullahan your size is Medium<br />
+        <span class="feature">Speed. </span>Your base walking speed is 30 feet.<br />
+		<span class="feature">Darkvision. </span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.<br />
+        <span class="feature">Dullahan Training. </span>As a dullahan you were created to reap the souls of the living. As such you are skilled in the use of scythes, sickles, and whips.<br />
+		<span class="feature">Headless. </span>Your head is able to detach from your body.<br />
+		<span class="feature">Intimidating. </span>Having a detachable head is quite the intimidation factor. You have proficiency in the Intimidation skill.<br />
+		<span class="feature">Trance. </span>You do not need to sleep. Instead, you enter a dormant state remaining semiconscious, for 4 hours a day.<br />
+		<span class="feature">Inescapable. </span>Nothing shall bar a dullahan - locks, gates, doors, and the like seemingly open for you. The Knock spell is known to all dullahan at creation. You may use it twice before a long rest is required.<br />
+		<span class="feature">Gold Aversion. </span>Your race suffers from a strong aversion to gold for reasons unknown to even dullahan themselves. Due to this dullahan prefer to be paid in other ways, such as gemstones.<br />
+        <span class="feature">Languages. </span>You can speak, read, and write Comman and Sylvan.<br />
+      </p>
+	  <table>
+		<thead>
+			<tr><td>Base Height</td><td>Height Modifier</td><td>Base Weight</td><td>Weight Modifier</td></tr>
+		</thead>
+        <tr><td>4'8"</td><td>+2d10</td><td>110 lb.</td><td>x (2d4) lb.</td></tr>
+      </table>
+    </description>
+    <sheet display="false" />
+    <setters>
+    </setters>
+    <rules>
+      <select type="Racial Trait" name="Ability Score Increase (Dullahan)" supports="Human Variant" number="3" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+	  <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+      <grant type="Racial Trait" id="ID_KH_RACIAL_TRAIT_DULLAHAN_TRAINING" />
+	  <grant type="Racial Trait" id="ID_KH_RACIAL_TRAIT_DULLAHAN_HEADLESS" />
+	  <grant type="Racial Trait" id="ID_KH_RACIAL_TRAIT_DULLAHAN_INTIMIDATING" />
+	  <grant type="Racial Trait" id="ID_KH_RACIAL_TRAIT_DULLAHAN_TRANCE" />
+	  <grant type="Racial Trait" id="ID_KH_RACIAL_TRAIT_DULLAHAN_INESCAPABLE" />
+	  <grant type="Racial Trait" id="ID_KH_RACIAL_TRAIT_DULLAHAN_GOLD_AVERSION" />
+    </rules>
+  </element>
+  
+  <element name="Dullahan Training" type="Racial Trait" source="Homebrew" id="ID_KH_RACIAL_TRAIT_DULLAHAN_TRAINING">
+    <supports />
+    <requirements />
+    <description>
+      <p>As a dullahan you were created to reap the souls of the living. As such you are skilled in the use of scythes, sickles, and whips.</p>
+    </description>
+    <sheet>
+      <description>You are skilled with: Scythes, Sickles, and Whips.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_WIKI_PROFICIENCY_WEAPON_PROFICIENCY_SCYTHE" />
+	  <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" />
+	  <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" />
+	</rules>
+  </element>
+  <element name="Headless" type="Racial Trait" source="Homebrew" id="ID_KH_RACIAL_TRAIT_DULLAHAN_HEADLESS">
+    <supports />
+    <requirements />
+    <description>
+      <p>You may attach or detach your head at will and always know the distance and direction to your head unless it is on another plane.</p>
+	  <p class="indent">Damage done to your head when seperated reduces your hit points.</p>
+	  <p class="indent">While your head and body are seperate:</p>
+	  <ul>
+        <li>Your head can see, hear, and speak regardless of the distance between it and your body.</li>
+        <li>Your headless body cannot speak but can eat, drink, hear, and see as well as cast spells, even those with verbal components.</li>
+      </ul>
+	  <p class="indent">You body both hears and sees through the unknown magic that created you.</p>
+	  <p class="indent">You are immune to decapitation.</p>
+    </description>
+    <sheet>
+      <description>Your head is able to detach from your body.</description>
+    </sheet>
+    <rules>
+	</rules>
+  </element>
+  <element name="Intimidating" type="Racial Trait" source="Homebrew" id="ID_KH_RACIAL_TRAIT_DULLAHAN_INTIMIDATING">
+    <supports />
+    <requirements />
+    <description>
+      <p>Having a detachable head is quite the intimidation factor. You have proficiency in the Intimidation skill.</p>
+    </description>
+    <sheet>
+      <description>You have proficiency in the Intimidation skill.</description>
+    </sheet>
+    <rules>
+		<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+	</rules>
+  </element>
+  <element name="Trance" type="Racial Trait" source="Homebrew" id="ID_KH_RACIAL_TRAIT_DULLAHAN_TRANCE">
+    <supports />
+    <requirements />
+    <description>
+      <p>You do not need to sleep. Instead, you enter a dormant state remaining semiconscious, for 4 hours a day.</p>
+    </description>
+    <sheet>
+      <description>You do not need to sleep. Instead, you enter a dormant state remaining semiconscious, for 4 hours a day.</description>
+    </sheet>
+    <rules>
+	</rules>
+  </element>
+  <element name="Inescapable" type="Racial Trait" source="Homebrew" id="ID_KH_RACIAL_TRAIT_DULLAHAN_INESCAPABLE">
+    <supports />
+    <requirements />
+    <description>
+      <p>Nothing shall bar a dullahan - locks, gates, doors, and the like seemingly open for you. The Knock spell is known to all dullahan at creation. You may use it twice before a long rest is required.</p>
+	  <p class="indent"></p>
+    </description>
+    <sheet>
+      <description>You know the Knock spell. It has two uses before a long rest it needed.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_KNOCK" />
+	</rules>
+  </element>
+  <element name="Gold Aversion" type="Racial Trait" source="Homebrew" id="ID_KH_RACIAL_TRAIT_DULLAHAN_GOLD_AVERSION">
+    <supports />
+    <requirements />
+    <description>
+      <p>Your race suffers from a strong aversion to gold for reasons unknown to even dullahan themselves. Due to this dullahan prefer to be paid in other ways, such as gemstones.</p>
+	  <p class="indent">Upon spotting gold within 10 feet of yourself you must make a Charisma (Persuasion) saving throw or be unable to get closer to it. If failed you may attempt a saving throw again on your next turn.</p>
+	  <p class="indent">Upon interacting with gold you must make a Charisma (Persuasion) saving throw every turn or immediately drop it.</p>
+    </description>
+    <sheet>
+      <description>Your race suffers from a strong aversion to gold for reasons unknown to even dullahan themselves. Due to this dullahan prefer to be paid in other ways, such as gemstones.</description>
+    </sheet>
+    <rules>
+	</rules>
+  </element>
+  
+	<element name="Scythe" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_SCYTHE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>This weapon is inspired by the common farming implement used to cut swaths of grown hay, but it has a straight handle and a heavier blade. Despite its humble origins, the scythe is recognized as a symbol of death in many cultures because of its use in reaping. Rather than being too heavy for most smaller creatures, the scythe is too long for Small sized creatures to wield effectively. </p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/wiki/Scythe_(5e_Equipment)</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d4</set>
+			<set name="proficiency">ID_WIKI_PROFICIENCY_WEAPON_PROFICIENCY_SCYTHE</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Scythe)" type="Proficiency" source="D&amp;D Wiki" id="ID_WIKI_PROFICIENCY_WEAPON_PROFICIENCY_SCYTHE">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_WIKI_PROFICIENCY_WEAPON_PROFICIENCY_SCYTHE" />
+		</rules>
+	</append>
+
+</elements>
