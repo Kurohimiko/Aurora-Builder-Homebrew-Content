@@ -11,18 +11,18 @@
 
   <element name="Dullahan" type="Race" source="Homebrew" id="ID_KH_RACE_DULLAHAN">
     <description>
-      <p class="flavor">"There is no way to bar the road aginst a dullahan - locks, gates, and doors seem to pose no obstacle to them. Rumors say they care not for being gawked at, often lashing out at those who do. They seem to possess a strong aversion to gold."</p>
+      <p class="flavor">"There is no way to bar the road against a dullahan - locks, gates, and doors seem to pose no obstacle to them. Rumors say they care not for being gawked at, often lashing out at those who do. They seem to possess a strong aversion to gold."</p>
 	  <p class="indent">-Unknown, Unknown</p>
       <h4>PERSONALITY</h4>
-      <p>Do to both their appearence and frequent rumors Dullahan tend to be shy, cold, or closed off during interations.<br /> <span class="indent"></span>As a being of death they enjoy both the dark and macabre. This is commanly seen in their love of dark humor.</p>
+      <p>Do to both their appearance and frequent rumors Dullahan tend to be shy, cold, or closed off during interactions.<br /> <span class="indent"></span>As a being of death they enjoy both the dark and macabre. This is commonly seen in their love of dark humor.</p>
       <h4>PHYSICAL DESCRIPTION</h4>
-      <p>Dullahan tend toward a more human appearence, often resembling a corpse with their ghastly and/or morbid skin tones.<br /> <span class="indent" />The sclera of their eyes are black while their iris varies in color.<br /> <span class="indent" />Hair can be any natural color but is commonly black, gray, or white.</p>
+      <p>Dullahan tend toward a more human appearance, often resembling a corpse with their ghastly and/or morbid skin tones.<br /> <span class="indent" />The sclera of their eyes are black while their iris varies in color.<br /> <span class="indent" />Hair can be any natural color but is commonly black, gray, or white.</p>
       <h4>HISTORY</h4>
       <p>A dullahan is a type of fey created from a decapitated human. Due to their headlessness they are frequently mistaken for the undead but both head and body are as alive as any human, given new life through unknown magic.<br /> <span class="indent" />It is believed they were originally created as a way to keep life in check and prevent it from growing too fast. Very little is known about dullahan as they are very tight lipped about their history.</p>
       <h4>ALIGNMENT</h4>
-      <p>As a reaper of souls, Dullahans typically tend toward neutral alignments, for death discriminates not.</p>
+      <p>As a reaper of souls, Dullahan typically tend toward neutral alignments, for death discriminates not.</p>
       <h4>LANGUAGE</h4>
-      <p>A fey creature, Dullahan are quite versed in the Sylvan language as are they in the Comman language.</p>
+      <p>A fey creature, Dullahan are quite versed in the Sylvan language as are they in the Common language.</p>
 	  <h4>DULLAHAN NAMES</h4>
       <p>Dullahan take a false names that usually tends towards being simple, sometimes even just repeating syllables. They don't willingly reveal their true names to anyone for they know the power names hold. Some dullahan have taken to using random human names or nicknames instead.</p>
       <p>
@@ -32,7 +32,7 @@
       <p>
         <span class="feature">Ability Score Increase. </span>You may choose three ability scores and increase them each by 1. <br />
         <span class="feature">Age. </span>Dullahan are magical creatures and as such do not age. However, they do appear as old as they where before they died. <br />
-        <span class="feature">Alignment. </span>Dullahans typically lean toward neutral, as death comes for all.<br />
+        <span class="feature">Alignment. </span>Dullahan typically lean toward neutral, as death comes for all.<br />
         <span class="feature">Size. </span>Dullahan are the height of a human. As a Dullahan your size is Medium<br />
         <span class="feature">Speed. </span>Your base walking speed is 30 feet.<br />
 		<span class="feature">Darkvision. </span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.<br />
@@ -42,7 +42,7 @@
 		<span class="feature">Trance. </span>You do not need to sleep. Instead, you enter a dormant state remaining semiconscious, for 4 hours a day.<br />
 		<span class="feature">Inescapable. </span>Nothing shall bar a dullahan - locks, gates, doors, and the like seemingly open for you. The Knock spell is known to all dullahan at creation. You may use it twice before a long rest is required.<br />
 		<span class="feature">Gold Aversion. </span>Your race suffers from a strong aversion to gold for reasons unknown to even dullahan themselves. Due to this dullahan prefer to be paid in other ways, such as gemstones.<br />
-        <span class="feature">Languages. </span>You can speak, read, and write Comman and Sylvan.<br />
+        <span class="feature">Languages. </span>You can speak, read, and write Common and Sylvan.<br />
       </p>
 	  <table>
 		<thead>
@@ -90,8 +90,8 @@
     <requirements />
     <description>
       <p>You may attach or detach your head at will and always know the distance and direction to your head unless it is on another plane.</p>
-	  <p class="indent">Damage done to your head when seperated reduces your hit points.</p>
-	  <p class="indent">While your head and body are seperate:</p>
+	  <p class="indent">Damage done to your head when separated reduces your hit points.</p>
+	  <p class="indent">While your head and body are separate:</p>
 	  <ul>
         <li>Your head can see, hear, and speak regardless of the distance between it and your body.</li>
         <li>Your headless body cannot speak but can eat, drink, hear, and see as well as cast spells, even those with verbal components.</li>
