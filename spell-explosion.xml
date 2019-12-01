@@ -5,7 +5,7 @@
     <description>DnD viable version of Megumin's Explosion Spell.</description>
     <author url="https://github.com/Kurohimiko">Kurohimiko (Original version by u/HipsterBird)</author>
     <update version="0.0.1">
-      <file name="spell-explosion.xml" url="" />
+      <file name="spell-explosion.xml" url="https://raw.githubusercontent.com/Kurohimiko/Aurora-Builder-Homebrew-Content/master/spell-explosion.xml" />
     </update>
   </info>
 
