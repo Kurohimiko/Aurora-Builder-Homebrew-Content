@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Explosion</name>
+    <description>DnD viable version of Megumin's Explosion Spell.</description>
+    <author url="https://github.com/Kurohimiko">Kurohimiko (Original version by u/HipsterBird)</author>
+    <update version="0.0.1">
+      <file name="spell-explosion.xml" url="" />
+    </update>
+  </info>
+
+  <element name="Explosion" type="Spell" source="Homebrew" id="ID_KH_SPELL_EXPLOSION">
+    <supports>Sorcerer, Wizard</supports>
+    <description>
+      <p>You conjure your magical power and unleash it onto a point of your choosing within range, causing devastating effects to anything in range.Each creature in a 20-foot radius must make a Dexterity saving throw. A target takes full damage on a failed save, or half as much damage on a successful one. The fire spreads around corners and ignites flammable objects in the area that aren't being worn or carried.</p>
+       <p class="indent">This spell, when cast, allows you to consume any number of spell slots and is treated as the highest level spell slot consumed. The spell deals 1d10 fire damage, plus 1d6 fire damage for each spell slot level consumed.</p>
+       <p class="indent">The Explosion Spell Slots table shows the damage increase as well as the stats for using higher spell slots.</p>
+	  <h5>Explosion Spell Slots</h5>
+      <table>
+        <thead>
+			<tr><td>Spell Slot Level</td><td>Damage Increase per Slot Level</td><td>Range</td><td>Radius</td></tr>
+		</thead>
+        <tr><td>1st</td><td>+1d6 Fire Damage</td><td>180 ft.</td><td>25 ft.</td></tr>
+        <tr><td>2nd</td><td>+2d6 Fire Damage</td><td>250 ft.</td><td>30 ft.</td></tr>
+        <tr><td>3rd</td><td>+3d6 Fire Damage</td><td>400 ft.</td><td>40 ft.</td></tr>
+        <tr><td>4th</td><td>+4d6 Fire Damage</td><td>600 ft.</td><td>50 ft.</td></tr>
+        <tr><td>5th</td><td>+5d6 Fire Damage</td><td>1000 ft.</td><td>60 ft.</td></tr>
+        <tr><td>6th</td><td>+6d6 Fire Damage</td><td>1500 ft.</td><td>70 ft.</td></tr>
+        <tr><td>7th</td><td>+7d6 Fire Damage</td><td>2000 ft.</td><td>80 ft.</td></tr>
+        <tr><td>8th</td><td>+8d6 Fire Damage</td><td>3000 ft.</td><td>90 ft.</td></tr>
+        <tr><td>9th</td><td>+9d6 Fire Damage</td><td>1 mile.</td><td>100 ft.</td></tr>
+      </table>
+	  <p class="indent">(Example: an 8th level wizard using four 1st level spell slots, three 2nd and 3rd level spell slots, and two 4th level spell slots would deal 1d10 + 27d6 fire damage with the casting, range, and radius treated as a 4th level spell as indicated in the Explosion Spell Slots table.)</p>
+	  <p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a 9th level spell slot, you are able to tap into the rawest form of magic. During casting you can decide what type of damage is dealt between fire damage and force gamage. If cast using force damage fire does not spread or ignite flammable objects.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">120 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">an eyepatch worth at least 1 gp</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  
+  <element name="Eyepatch" type="Item" source="Homebrew" id="ID_KH_ITEM_EYEPATCH">
+		<description>
+			<p>An extravegant eyepatch used for either cover an empty eye socket or for traveling at night or in the dark.</p>
+			<p class="indent"><b><i>Poor Perception.</i></b>While wearing an eyepatch, due to limiting your vision to one eye, you have disadvantage on all perception checks.</p>
+			<p class="indent"><b><i>Adjusted to the Dark.</i></b>While wearing an eyepatch, and still having both eyes, you can see in darkness as if it were dim light for 20 ft by uncovering your eye.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0">—</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+</elements>
