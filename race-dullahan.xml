@@ -24,7 +24,7 @@
       <h4>LANGUAGE</h4>
       <p>A fey creature, Dullahan are quite versed in the Sylvan language as are they in the Common language.</p>
 	  <h4>DULLAHAN NAMES</h4>
-      <p>Dullahan take a false names that usually tends towards being simple, sometimes even just repeating syllables. They don't willingly reveal their true names to anyone for they know the power names hold. Some dullahan have taken to using random human names or nicknames instead.</p>
+      <p>Dullahan take a false names that usually tends towards being simple, sometimes even just repeating syllables. They don't willingly reveal their true names to anyone for they know the power names hold. Some dullahan have taken to using random names or nicknames instead.</p>
       <p>
       </p>
       <h4>DULLAHAN TRAITS</h4>
@@ -37,10 +37,11 @@
         <span class="feature">Speed. </span>Your base walking speed is 30 feet.<br />
 		<span class="feature">Darkvision. </span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.<br />
         <span class="feature">Dullahan Training. </span>As a dullahan you were created to reap the souls of the living. As such you are skilled in the use of scythes, sickles, and whips.<br />
-		<span class="feature">Headless. </span>Your head is able to detach from your body.<br />
+		<span class="feature">Headless. </span>You may attach or detach your head at will, preventing death by decapitation. You always know the distance and direction to your head unless it is on another plane.
+		Damage done to your head when seperated reduces your hit points. When separate, both head and body can see and hear. Your headless body cannot speak but can eat and drink as well as cast spells, even spells with verbal components.<br />
 		<span class="feature">Intimidating. </span>Having a detachable head is quite the intimidation factor. You have proficiency in the Intimidation skill.<br />
 		<span class="feature">Trance. </span>You do not need to sleep. Instead, you enter a dormant state remaining semiconscious, for 4 hours a day.<br />
-		<span class="feature">Inescapable. </span>Nothing shall bar a dullahan - locks, gates, doors, and the like seemingly open for you. The Knock spell is known to all dullahan at creation. You may use it twice before a long rest is required.<br />
+		<span class="feature">Inescapable. </span>Nothing shall bar a dullahan - locks, gates, doors, and the like seemingly open for you. The Knock spell is known to all dullahan at creation. You may use it twice at a reduced range of 10 ft before a long rest is required.<br />
 		<span class="feature">Gold Aversion. </span>Your race suffers from a strong aversion to gold for reasons unknown to even dullahan themselves. Due to this dullahan prefer to be paid in other ways, such as gemstones.<br />
         <span class="feature">Languages. </span>You can speak, read, and write Common and Sylvan.<br />
       </p>
@@ -89,15 +90,14 @@
     <supports />
     <requirements />
     <description>
-      <p>You may attach or detach your head at will and always know the distance and direction to your head unless it is on another plane.</p>
-	  <p class="indent">Damage done to your head when separated reduces your hit points.</p>
+      <p>You may attach or detach your head at will, preventing death by decapitation.</p>
+	  <p class="indent">You always know the distance and direction to your head unless it is on another plane.</p>
+	  <p class="indent">Damage done to your head when seperated reduces your hit points. </p>
 	  <p class="indent">While your head and body are separate:</p>
 	  <ul>
         <li>Your head can see, hear, and speak regardless of the distance between it and your body.</li>
         <li>Your headless body cannot speak but can eat, drink, hear, and see as well as cast spells, even those with verbal components.</li>
       </ul>
-	  <p class="indent">You body both hears and sees through the unknown magic that created you.</p>
-	  <p class="indent">You are immune to decapitation.</p>
     </description>
     <sheet>
       <description>Your head is able to detach from your body.</description>
@@ -134,11 +134,11 @@
     <supports />
     <requirements />
     <description>
-      <p>Nothing shall bar a dullahan - locks, gates, doors, and the like seemingly open for you. The Knock spell is known to all dullahan at creation. You may use it twice before a long rest is required.</p>
+      <p>Nothing shall bar a dullahan - locks, gates, doors, and the like seemingly open for you. The Knock spell is known to all dullahan at creation. You may use it twice at a range of 10 ft before a long rest is required.</p>
 	  <p class="indent"></p>
     </description>
     <sheet>
-      <description>You know the Knock spell. It has two uses before a long rest it needed.</description>
+      <description>You know the Knock spell. It has two uses at a range of 10 ft before a long rest it needed.</description>
     </sheet>
     <rules>
       <grant type="Spell" id="ID_PHB_SPELL_KNOCK" />
@@ -159,27 +159,26 @@
 	</rules>
   </element>
   
-	<element name="Scythe" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_SCYTHE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	<element name="Martial Scythe" type="Weapon" source="Homebrew" id="ID_KH_WEAPON_MARTIAL_SCYTHE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<description>
-			<p>This weapon is inspired by the common farming implement used to cut swaths of grown hay, but it has a straight handle and a heavier blade. Despite its humble origins, the scythe is recognized as a symbol of death in many cultures because of its use in reaping. Rather than being too heavy for most smaller creatures, the scythe is too long for Small sized creatures to wield effectively. </p>
+			<p>This weapon is inspired by the common farming implement used to cut swaths of grown hay, but it has been redisgned for combat with a straight handle and a heavier blade. Despite its humble origins, the scythe is recognized as a symbol of death in many cultures because of its use in reaping. Rather than being too heavy for most smaller creatures, the scythe is too long for Small sized creatures to wield effectively. </p>
 		</description>
 		<setters>
-			<set name="sourceUrl">https://www.dandwiki.com/wiki/Scythe_(5e_Equipment)</set>
 			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">20</set>
-			<set name="weight" lb="4">4 lb.</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="5">5 lb.</set>
 			<set name="slot">twohand</set>
-			<set name="damage" type="slashing">2d4</set>
-			<set name="proficiency">ID_WIKI_PROFICIENCY_WEAPON_PROFICIENCY_SCYTHE</set>
+			<set name="damage" type="slashing">1d12</set>
+			<set name="proficiency">ID_KH_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_SCYTHE</set>
 		</setters>
 	</element>
-	<element name="Weapon Proficiency (Scythe)" type="Proficiency" source="D&amp;D Wiki" id="ID_WIKI_PROFICIENCY_WEAPON_PROFICIENCY_SCYTHE">
-		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	<element name="Weapon Proficiency (Martial Scythe)" type="Proficiency" source="Homebrew" id="ID_KH_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_SCYTHE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 	</element>
-	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
 		<rules>
-			<grant type="Proficiency" id="ID_WIKI_PROFICIENCY_WEAPON_PROFICIENCY_SCYTHE" />
+			<grant type="Proficiency" id="ID_KH_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_SCYTHE" />
 		</rules>
 	</append>
 
