@@ -51,7 +51,7 @@
   
   <element name="Eyepatch" type="Item" source="Homebrew" id="ID_KH_ITEM_EYEPATCH">
 		<description>
-			<p>An extravegant eyepatch used for either cover an empty eye socket or for traveling at night or in the dark.</p>
+			<p>An extravegant eyepatch used to either cover an empty eye socket or for traveling at night or in the dark.</p>
 			<p class="indent"><b><i>Poor Perception.</i></b>While wearing an eyepatch, due to limiting your vision to one eye, you have disadvantage on all perception checks.</p>
 			<p class="indent"><b><i>Adjusted to the Dark.</i></b>While wearing an eyepatch, and still having both eyes, you can see in darkness as if it were dim light for 20 ft by uncovering your eye.</p>
 		</description>
