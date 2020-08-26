@@ -13,6 +13,7 @@
     <supports>Sorcerer, Wizard</supports>
     <description>
       <p>You conjure your magical power and unleash it onto a point of your choosing within range, causing devastating effects to anything in range.Each creature in a 20-foot radius must make a Dexterity saving throw. A target takes full damage on a failed save, or half as much damage on a successful one. The fire spreads around corners and ignites flammable objects in the area that aren't being worn or carried.</p>
+       <p class="indent">If cast using a 2nd level spell slot or higher non-magical objecta that aren't being worn or carried also take the damage.</p>
        <p class="indent">This spell, when cast, allows you to consume any number of spell slots and is treated as the highest level spell slot consumed. The spell deals 1d10 fire damage, plus 1d6 fire damage for each spell slot level consumed.</p>
        <p class="indent">The Explosion Spell Slots table shows the damage increase as well as the stats for using higher spell slots.</p>
 	  <h5>Explosion Spell Slots</h5>
